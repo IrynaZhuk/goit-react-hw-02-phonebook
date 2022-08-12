@@ -8,7 +8,7 @@ export const Contact = ({ deleteContact, name, number, id }) => {
       <button
         className={styles.btn}
         type="button"
-        onClick={deleteContact}
+        onClick={() => deleteContact(id)}
         id={id}
       >
         Delete
